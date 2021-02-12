@@ -1,2 +1,1 @@
-[Ubuntu]
-35.154.175.52
+35.154.175.52 ansible_user=root
