@@ -1,14 +1,14 @@
 ---
-- hosts: webservers 
+- hosts: Ubuntu
   become: True
   tasks:
     - name: Install packages
       yum:
-        name: "httpd"
+        name: "tomcat9"
         state: "present"
     - name: Start Apache server
       service:
-        name: httpd
+        name: tomcat9
         state: started
         enabled: True
     - name: Deploy static website
